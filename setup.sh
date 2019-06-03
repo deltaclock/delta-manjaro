@@ -1,3 +1,4 @@
+#!/bin/bash
 # SETUP SCRIPT FOR PENTEST MANJARO
 sudo pacman -Syyu
 sudo pacman -S yay
