@@ -2,7 +2,7 @@
 # SETUP SCRIPT FOR PENTEST MANJARO
 sudo pacman -Syyu
 sudo pacman -S yay
-yay -S go docker burpsuite virtualbox chromium visual-studio-code-bin python2-pip python-pip discord lsd binwalk
+yay -S go docker burpsuite virtualbox chromium visual-studio-code-bin python2-pip python-pip discord lsd binwalk qbittorrent
 
 # REDSHIFT ONLY FOR XFCE
 # HASHCAT ?
@@ -21,3 +21,8 @@ echo '[[ -f ~/.config/bash/bash.conf ]] && source ~/.config/bash/bash.conf' >> ~
 cp -r bash/ ~/.config/
 
 go get github.com/OJ/gobuster && go install github.com/OJ/gobuster
+
+cd ~/Downloads
+wget https://cdimage.kali.org/kali-2019.2/kali-linux-xfce-2019.2-amd64.iso
+wget https://az792536.vo.msecnd.net/vms/VMBuild_20180102/VirtualBox/IE11/IE11.Win7.VirtualBox.zip
+wget https://az792536.vo.msecnd.net/vms/VMBuild_20190311/VirtualBox/MSEdge/MSEdge.Win10.VirtualBox.zip
