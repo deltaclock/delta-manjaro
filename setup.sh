@@ -16,7 +16,8 @@ wget https://gist.githubusercontent.com/deltaclock/ff1d639f2406a14756c57f2399e0e
 python -m pip install --user wfuzz
 
 # SETUP BASH
-echo '[[ -f ~/.config/bash/bash.conf ]] && source ~/.config/bash/bash.conf' >> .bashrc
+cd .
+echo '[[ -f ~/.config/bash/bash.conf ]] && source ~/.config/bash/bash.conf' >> ~/.bashrc
 cp -r bash/ ~/.config/
 
 go get github.com/OJ/gobuster && go install github.com/OJ/gobuster
