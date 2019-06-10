@@ -2,7 +2,7 @@
 ################ SETUP SCRIPT FOR PENTEST MANJARO ###########
 sudo pacman -Syyu
 sudo pacman -S yay
-yay -S go docker burpsuite virtualbox chromium visual-studio-code-bin python2-pip python-pip discord lsd binwalk qbittorrent
+yay -S go docker burpsuite virtualbox chromium visual-studio-code-bin python2-pip python-pip discord lsd binwalk qbittorrent vim nmap proxychains-ng
 
 # REDSHIFT ONLY FOR XFCE
 # HASHCAT ?
@@ -33,4 +33,4 @@ wget https://az792536.vo.msecnd.net/vms/VMBuild_20180102/VirtualBox/IE11/IE11.Wi
 wget https://az792536.vo.msecnd.net/vms/VMBuild_20190311/VirtualBox/MSEdge/MSEdge.Win10.VirtualBox.zip
 unzip IE11.Win7.VirtualBox.zip && unzip MSEdge.Win10.VirtualBox.zip
 rm IE11.Win7.VirtualBox.zip MSEdge.Win10.VirtualBox.zip
-mkdir ~/Desktop/vm_shares/{kali,pwn,win7,win10}
+mkdir -p ~/Desktop/vm_shares/{kali,pwn,win7,win10}
