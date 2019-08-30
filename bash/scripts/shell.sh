@@ -26,7 +26,7 @@ shell(){
 	fi
 }
 upshell(){
-	echo python -c 'import pty;pty.spawn("/bin/bash")'
+	echo python -c "'import pty;pty.spawn(\"/bin/bash\")'"
 	echo stty raw -echo
 	echo reset
 	echo export SHELL=bash
