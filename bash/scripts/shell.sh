@@ -28,10 +28,10 @@ shell(){
 upshell(){
 	echo python -c "'import pty;pty.spawn(\"/bin/bash\")'"
 	echo stty raw -echo
-	echo reset
 	echo export SHELL=bash
 	echo export TERM=xterm-256color
 	rows=$(stty size | cut -d' ' -f1)
 	cols=$(stty size | cut -d' ' -f2)
 	echo stty rows $rows columns $cols
+	echo reset
 }
