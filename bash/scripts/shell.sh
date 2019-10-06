@@ -1,10 +1,11 @@
 #!/bin/bash
 shell(){
 	shellType=$1
-	iface=$2
 	port=$3
-	ip=$(ip a show $iface 2>/dev/null| grep -oPm1 '(([\d.]).*)\/')
-	ip=${ip::-1}
+	ip=$2
+	#iface=$2
+	#ip=$(ip a show $iface 2>/dev/null| grep -oPm1 '(([\d.]).*)\/')
+	#ip=${ip::-1}
 
 	randchar=$(cat /dev/urandom| tr -dc 'a-zA-Z'|head -c 1)
 	if [[ $shellType == "bash" ]]; then
