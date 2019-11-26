@@ -19,7 +19,7 @@ wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64
 python -m pip install --user wfuzz
 
 # SETUP BASH
-cd .
+cd ~/delta-manjaro
 echo '[[ -f ~/.config/bash/bash.conf ]] && source ~/.config/bash/bash.conf' >> ~/.bashrc
 cp -r bash/ ~/.config/
 
