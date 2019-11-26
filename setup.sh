@@ -12,8 +12,8 @@ git clone https://github.com/deltaclock/dirbuster-lists.git
 git clone https://github.com/danielmiessler/SecLists.git
 wget https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh && mv LinEnum.sh linenum.sh
 wget https://gist.githubusercontent.com/deltaclock/ff1d639f2406a14756c57f2399e0ea17/raw/db4aa8d2d3b3d934f820916bfc68def49c013865/sh.perl
-wget https://github.com/DominicBreuker/pspy/releases/download/v1.0.0/pspy32
-wget https://github.com/DominicBreuker/pspy/releases/download/v1.0.0/pspy64
+wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy32
+wget https://github.com/DominicBreuker/pspy/releases/download/v1.2.0/pspy64
 
 
 python -m pip install --user wfuzz
